@@ -1,0 +1,15 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "怡茶后台信息管理",
+  "main": "server.js",
+  "scripts": {
+    "client-install":"npm install --prefix client",
+    "client":"npm start --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev":"concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "张明华",
+  "license": "ISC"
+}
